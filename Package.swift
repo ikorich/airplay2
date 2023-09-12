@@ -14,17 +14,17 @@ let package = Package(
             name: "CocoaAsyncSocket",
             targets: ["CocoaAsyncSocket"]),
     ],
-    dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        .package(
-            url: "https://github.com/robbiehanson/CocoaAsyncSocket",
-            from: "7.6.5"
-        ),
-        .package(
-            url: "https://github.com/krzyzanowskim/CryptoSwift.git",
-            .upToNextMajor(from: "1.4.2")
-        )
-    ],
+//    dependencies: [
+//        // Dependencies declare other packages that this package depends on.
+//        .package(
+//            url: "https://github.com/robbiehanson/CocoaAsyncSocket",
+//            from: "7.6.5"
+//        ),
+//        .package(
+//            url: "https://github.com/krzyzanowskim/CryptoSwift.git",
+//            .upToNextMajor(from: "1.4.2")
+//        )
+//    ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
