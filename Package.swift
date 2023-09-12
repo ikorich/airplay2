@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "AirPlay",
+    name: "AirPlayLib",
     platforms: [
         .macOS(.v11),
         .iOS(.v13)
@@ -37,7 +37,7 @@ let package = Package(
                 "Ed25519"
             ],
             resources: [
-                .process("Resources"),
+//                .process("Resources"),
             ]
         ),
         .target(
