@@ -9,6 +9,11 @@ let package = Package(
         .macOS(.v11),
         .iOS(.v13)
     ],
+    products: [
+        .library(
+            name: "CocoaAsyncSocket",
+            targets: ["CocoaAsyncSocket"]),
+    ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         .package(
