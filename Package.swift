@@ -31,9 +31,9 @@ let package = Package(
         .target(
             name: "AirPlay",
             dependencies: [
-                "CocoaAsyncSocket",
+//                "CocoaAsyncSocket",
                 "Curve25519",
-                "CryptoSwift",
+//                "CryptoSwift",
                 "Ed25519"
             ],
             resources: [
