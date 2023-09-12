@@ -11,8 +11,8 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "CocoaAsyncSocket",
-            targets: ["CocoaAsyncSocket"]),
+            name: "AirPlayLib",
+            targets: ["AirPlayLib"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
