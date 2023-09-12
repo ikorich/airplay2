@@ -11,8 +11,8 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "AirPlayLib",
-            targets: ["AirPlayLib"]),
+            name: "AirPlay",
+            targets: ["AirPlay"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
