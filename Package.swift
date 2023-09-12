@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "AirPlayLib",
+    name: "AirPlay",
     platforms: [
         .macOS(.v11),
         .iOS(.v13)
