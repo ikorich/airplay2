@@ -1,5 +1,4 @@
 import CocoaAsyncSocket
-import Cocoa
 
 final class AirTunesService: NSObject {
 
@@ -240,7 +239,7 @@ final class AirTunesService: NSObject {
             break
         case "TEARDOWN":
             let converter = PlistConverter(binaryData: message.body)!
-            let plist = converter.plist!
+            //let plist = converter.plist!
 
             print(converter.convertToXML()!)
 

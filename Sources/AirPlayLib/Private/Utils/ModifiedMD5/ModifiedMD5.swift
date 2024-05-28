@@ -10,16 +10,16 @@ final class ModifiedMD5: NSObject {
         Array.copy(src: originalblockIn.bytes, srcPos: 0, dest: blockIn.bytes, destPos: 0, length: 64)
 
         let stream = CustomStream(data: keyIn)
-        let A: Int64 = stream.readBytes(with: MemoryLayout<Int64>.size)!.withUnsafeBytes {
+        var A: Int64 = stream.readBytes(with: MemoryLayout<Int64>.size)!.withUnsafeBytes {
             $0.load(as: Int64.self)
         } & 0xffffffff
-        let B: Int64 = stream.readBytes(with: MemoryLayout<Int64>.size)!.withUnsafeBytes {
+        var B: Int64 = stream.readBytes(with: MemoryLayout<Int64>.size)!.withUnsafeBytes {
             $0.load(as: Int64.self)
         } & 0xffffffff
-        let C: Int64 = stream.readBytes(with: MemoryLayout<Int64>.size)!.withUnsafeBytes {
+        var C: Int64 = stream.readBytes(with: MemoryLayout<Int64>.size)!.withUnsafeBytes {
             $0.load(as: Int64.self)
         } & 0xffffffff
-        let D: Int64 = stream.readBytes(with: MemoryLayout<Int64>.size)!.withUnsafeBytes {
+        var D: Int64 = stream.readBytes(with: MemoryLayout<Int64>.size)!.withUnsafeBytes {
             $0.load(as: Int64.self)
         } & 0xffffffff
 

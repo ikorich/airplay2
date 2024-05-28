@@ -1,5 +1,4 @@
 import CocoaAsyncSocket
-import Cocoa
 
 final class MirroringService: NSObject {
 

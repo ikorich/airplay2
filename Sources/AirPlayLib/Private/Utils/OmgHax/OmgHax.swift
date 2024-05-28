@@ -5,12 +5,12 @@ final class OmgHax: NSObject {
     // MARK: - Public
 
     func decryptAesKey(message3: Data, cipherText: Data, keyOut: Data) {
-        let chunk1 = cipherText.range(start: 16)
+        /*let chunk1 = cipherText.range(start: 16)
         let chunk2 =  cipherText.range(start: 56)
         let blockIn = [UInt8](repeating: 0, count: 16)
         let sapKey = [UInt8](repeating: 0, count: 16)
         let keySchedule = [[Int]](repeating: [Int](repeating: 0, count: 4), count: 11)
-        /*
+        
         generate_session_key(default_sap, message3, sapKey);
         generate_key_schedule(sapKey, key_schedule);
         z_xor(chunk2, blockIn, 1);
@@ -26,7 +26,7 @@ final class OmgHax: NSObject {
     // MARK: - Private
 
     func generateSessionKey(oldSap: [UInt8], messageIn: [UInt8], sessionKey: [UInt8]) {
-        let decryptedMessage = [UInt8](repeating: 0, count: 128)
+        /*let decryptedMessage = [UInt8](repeating: 0, count: 128)
         let newSap = [UInt8](repeating: 0, count: 320)
         let md5 = [UInt8](repeating: 0, count: 16)
 
@@ -39,7 +39,7 @@ final class OmgHax: NSObject {
         for round in 0...4 {
             let base = newSap.data.range(start: round * 64)
         }
-
+         */
 
     }
 }
