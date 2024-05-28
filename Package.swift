@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.7
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -7,7 +7,7 @@ let package = Package(
     name: "AirPlayLib",
     platforms: [
         .macOS(.v11),
-        .iOS(.v13)
+        .iOS(.v14)
     ],
     products: [
         .library(
@@ -35,9 +35,6 @@ let package = Package(
                 "Curve25519",
                 "CryptoSwift",
                 "Ed25519"
-            ],
-            resources: [
-//                .process("Resources"),
             ]
         ),
         .target(
